@@ -1,0 +1,48 @@
+.Impressao {
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  border-radius: 50%;
+  top:0.01in;
+  left: 0;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+}
+.impressao_digital_img{
+  position:absolute;
+  width: 1in;
+  top:0.3in;
+  left:0.55in;
+}
+.impressao_digital_text{
+  position: absolute;
+  top:1.4in;
+  left:0;
+}
+
+.fingerprint {
+  position: absolute;
+  top:0.2in;
+  height: 1.15in;
+  left:0.45in;
+  width: 1.2in;
+}
+
+.fingerprint.scanning::after {
+  content: '';
+  position: absolute;
+  margin-left:-0.55in;
+  width: 1.2in;
+  height: 8px;
+  background-image: linear-gradient(to bottom,
+    rgba(255, 81, 0, 0),
+    rgba(255, 81, 0, 0.8));
+  animation: scanning .8s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scanning {
+    100% { transform: translate(0, 1.15in); }
+}

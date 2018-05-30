@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)file:///Users/Nagrand/Documents/IST/2%C2%BA%20ano/2%C2%BA%20Semestre/IPM/Labs/Web/iRave/Terceira_Tarefa/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./Prototipo_files/Definicoes.css">
+        <link rel="stylesheet" href="./Prototipo_files/Slider.css">
+        <link rel="stylesheet" href="./Prototipo_files/style.css">
+        <link rel="stylesheet" href="./Prototipo_files/Musica.css">
+        <link rel="stylesheet" href="./Prototipo_files/Localizar.css">
+          <link rel="stylesheet" href="./Prototipo_files/Impressao.css">
+        
+              
+        <script type="text/javascript" src="./Prototipo_files/Definicoes.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/Amigos_info.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/Localizar.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/musicas.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/Cartaz_info.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/Cartaz.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/Musica_info.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/Musica.js"></script>
+        <script type="text/javascript" src="./Prototipo_files/scripts.js"></script>
+
+        <title>
+            Prototipo
+        </title>
+    </head>
+
+    <body style="font-family: sans-serif;" onload="init_iRave();">
+
+      <div id="iRave">
+        <img id="watch_img" src="./Prototipo_files/watch.png">
+        <img id="button_img" src="./Prototipo_files/botao.png" onclick="back();">
+        <img id="button" src="./Prototipo_files/botao_bloqueio.png" onclick="sleep();">
+        <div id="back"></div>
+        <div class="main-screen" onclick="show_menu();">
+          <p id="time">17:22</p>
+          <p id="instruction">Toque para desbloquear</p>
+          <img id="fingerprint_indication" src="./Prototipo_files/fingerprint.png">
+        </div>
+
+        
+        <canvas id="canvas"></canvas>
+
+        <div class="menu">
+          <img name="Musica" class="icon" src="./Prototipo_files/Musica.png" onclick="launch_app()">
+          <p class="AppName">Qual a Música?</p>
+          <img class="right_arrow" src="./Prototipo_files/right_arrow.png" onclick="move(1);">
+          <img class="left_arrow" src="./Prototipo_files/left_arrow.png" onclick="move(-1);">
+          <img class="dot" id="dot1" src="./Prototipo_files/greydot.png">
+          <img class="dot" id="dot2" src="./Prototipo_files/dot.png">
+          <img class="dot" id="dot3" src="./Prototipo_files/dot.png">
+          <img class="dot" id="dot4" src="./Prototipo_files/dot.png">
+        </div>
+
+        <div class="Cartaz">
+
+        </div>
+        <div class="Bandas">
+
+        </div>
+        <div class="Musica">
+            <div class="Musica_menu">
+                <div id="Musica_escolha1" onclick="reconhecer()">
+                    <img class="Musica_img" src="./Prototipo_files/music.png">
+                    <p class="desc">Reconhecer Música</p>
+                </div>
+                <div id="Musica_escolha2" onclick="show_favoritos()">
+                    <img class="Favoritos_img" src="./Prototipo_files/star.png">
+                    <p class="desc">Favoritos</p>
+                    <div class="fav_number_b">
+                        <span class="fav_number"></span>
+                    </div>
+                </div>
+            </div> <!-- end of "Musica_menu"-->
+
+            <div class="Reconhece" id="Procura">
+                <img class="Procura_img" src="./Prototipo_files/music.png">
+                <p id="Ouvindo">Ouvindo</p>
+                <img id="ponto1" src="./Prototipo_files/greydot.png">
+                <img id="ponto2" src="./Prototipo_files/greydot.png">
+                <img id="ponto3" src="./Prototipo_files/greydot.png">
+            </div> <!-- end of "Procura"-->
+
+            <div class="Reconhece" id="Mostra">
+                <img id="back_img" src="./Prototipo_files/Childrain.png">
+                <p id="musica"></p>
+                <p id="banda"></p>
+                <img id="fav_status" src="./Prototipo_files/plus.png" onclick="favorite()">
+                <img id="more_music" src="./Prototipo_files/more_music.png" onclick="show_information()">
+
+            </div> <!-- end of "Mostra"-->
+
+            <div class="Album">
+                <img id="back_img_album" src="./Prototipo_files/Winters_Gate.png">
+                <p id="album">Shadows of a Dying Sun</p>
+                <!--
+                    <p id="by">Por</p>
+                    <p id="artista">Insomnium</p>
+                -->
+                <p id="info_extra">2014 . 11 songs, 1hr e 2 min</p>
+            </div>
+
+
+
+            <div class="more_info">
+                <div id="Info_escolha1" onclick="show_letra()">
+                    <img class="Musica_img" src="./Prototipo_files/Lyrics_icon.png">
+                    <p class="desc">Letra</p>
+                </div>
+                <div id="Info_escolha2" onclick="show_album()">
+                    <img class="Favoritos_img" src="./Prototipo_files/Album_icon.png">
+                    <p class="desc">Álbum</p>
+                </div>
+            </div>
+
+            <div class="Favoritos">
+            </div>
+
+            <div class="letra_box">
+                <span id="letra"></span>
+            </div>
+
+            <div class="MusicList">
+            </div>
+
+            <div class="validation">
+                <p class="question">Tem a certeza que quer remover<br></p>
+                <p class="question_song"></p>
+                <span class="yes" onclick="notify_awnser(&#39;Sim&#39;)">Sim</span>
+                <span class="no" onclick="notify_awnser(&#39;Nao&#39;)">Não</span>
+                <div class="validation_background"></div>
+            </div>
+          </div>  <!-- end of "Musica"-->
+
+          <div class="Definicoes">
+            <div class="def_title">
+              <span class="def_title_text">Definições</span>
+              <img class="right_arrow_def" src="./Prototipo_files/right_arrow.png" onclick="def_move(1);">
+            </div>
+            <div class="def_item1">
+              <span class="def_item_text">Impressão Digital</span>
+              <label class="switch" id="switch1">
+                <input class="input" type="checkbox" focus="" onclick="configurar()">
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <div class="def_item2">
+                <span class="def_item_text2">Visibilidade</span>
+                <label class="switch" id="switch2">
+                    <input class="input" type="checkbox" checked="" onclick="visibility()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="def_footer">
+            </div>
+            <div class="Impressao">
+                    <div class="fingerprint"></div>
+            
+                <img class="impressao_digital_img" src="./Prototipo_files/fingerprint.png" onclick="scan()">
+                <span class="impressao_digital_text">Toque para configurar impressão digital</span>
+            </div>
+
+            <div class="Device_name"> 
+                    <div class="def_title">
+                        <span class="def_title_text">Dispositivo</span>
+                        <img class="left_arrow_def" src="./Prototipo_files/left_arrow.png" onclick="def_move(-1);">
+                    </div>
+                    <div class="def_item1">
+                            <span class="def_item_text_dev">Nome: user.99</span>
+                    <div class="def_footer_dev"></div>
+                </div>
+            </div>
+            
+          </div> <!-- END  OF "DEFINICOES" -->
+
+
+        <div class="Localizar">
+
+        </div>
+        <div class="notification">
+            <div class="left_circle"></div>
+            <span class="notification_text">Adicionado aos favoritos</span>
+            <div class="right_circle"></div>
+        </div>
+        <div class="info">
+          <div class="info_background"></div>
+          <p class="info_text"></p>
+        </div>
+        <div class="request">
+            <p class="request_to"></p>
+            <p class="request_name"> user.99 </p>
+            <p class="requestion">deseja adicioná-lo aos amigos<br></p>
+            <span class="accept" onclick="add_friend(&#39;Aceitar&#39;)">Aceitar</span>
+            <span class="deny" onclick="add_friend(&#39;Rejeitar&#39;)">Rejeitar</span>
+            <div class="request_background"></div>
+        </div>
+
+        <div class="request_localizar">
+            <p class="requestion_localizar">Tem a certeza que deseja cancelar o pedido enviado a <br></p>
+            <p class="request_name_localizar"> user.99 </p>
+            <span class="accept" onclick="cancel(&#39;Sim&#39;)">Sim</span>
+            <span class="deny" onclick="cancel(&#39;Nao&#39;)">Não</span>
+            <div class="request_background"></div>
+        </div>
+
+        <div class="request_remover">
+                <p class="requestion_remover">Tem a certeza que deseja remover <br> da sua lista de amigos?</p>
+                <p class="request_name_remover"> user.99 </p>
+                <span class="accept" onclick="remove_friend(&#39;Sim&#39;)">Sim</span>
+                <span class="deny" onclick="remove_friend(&#39;Nao&#39;)">Não</span>
+                <div class="request_background"></div>
+            </div>
+
+        <div class="mapa">
+            <img src="./Prototipo_files/map_arrow.png" id="my_arrow">
+            <img src="./Prototipo_files/friend_arrow.png" id="friend_arrow">
+    
+            <div ondragstart="return false" id="drag-img">
+                <img src="./Prototipo_files/mapa.png" id="background-img">
+                
+                <div id="location">
+                    <img src="./Prototipo_files/location.png" id="friend_location_img">
+                    <p id="friend_location_name"> </p>
+                </div>
+                <img src="./Prototipo_files/me.png" id="my_location">
+            </div>  
+            <input type="button" id="zoomout">
+            <input type="button" id="zoomin">
+        </div>
+        <!--
+        <div class="mapa"> 
+                
+                <div class="friend_location">
+                      <img src="assets/location.png" id=friend_location_img>
+                      <p id=friend_location_name></p>
+                      <img src="assets/me.png" id=my_location_img2>
+                </div>
+
+                <div class="my_location">
+                        <img src="assets/me.png" id=my_location_img>
+                        <img src="assets/map_arrow.png" onclick="change();" id=my_arrow_img>
+                </div>
+                
+        
+        -->
+        </div>
+    
+    <script>
+        document.getElementById('zoomout').addEventListener('click', function() {
+        zoom(-1);
+        });
+        document.getElementById('zoomin').addEventListener('click', function() {
+        zoom(1);
+        });
+
+    </script>
+
+</body></html>

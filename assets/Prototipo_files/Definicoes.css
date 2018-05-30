@@ -1,0 +1,151 @@
+.Definicoes {
+  width: 2.12in;
+  height: 2.12in;
+  position: absolute;
+  border-radius: 50%;
+  top:18%;
+  left:15%;
+  z-index: 4;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+}
+
+.def_title {
+	position: absolute;
+	height:0.56in;
+	width:1.85in;
+	top:0.01in;
+	margin-left:0.125in;
+	text-align: center;
+}
+
+.def_title_text {
+	font-size: 0.22in;
+	position: relative;
+	width:1.85in;
+	top:0.25in;
+	text-align: center;
+}
+
+.def_footer {
+  position: absolute;
+  width:1.75in;
+  height: 0.5in;
+  top:1.65in;
+  margin-left:0.19in;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+}
+
+.def_item1 {
+  position: relative;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+  top:0.6in;
+  width:1.9in;
+  height: 0.55in;
+  margin-left:0.110in;
+  margin-bottom:-10%;
+  text-align: left;
+}
+.def_item2 {
+  position: relative;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+  width:2.1in;
+  margin-left:0.01in;
+  top:0.78in;
+  height: 0.55in;
+  text-align: left;
+}
+
+.def_item_text {
+  font-size: 0.18in;
+  position: absolute;
+  margin-top: 0.03in;
+  width: 0.5in;
+}
+
+.def_item_text2 {
+  font-size: 0.18in;
+  position: absolute;
+  margin-top: 0.14in;
+  width: 0.5in;
+  left:0.1in;
+}
+
+#switch1{
+  position: absolute;
+  right: 0;
+  top:0.04in;
+}
+
+#switch2{
+  position: absolute;
+  right: 0.1in;;
+  top:0.04in;
+}
+
+.impressao_digital {
+  width: 2.12in;
+  height: 2.12in;
+  position: absolute;
+  border-radius: 50%;
+  top:18%;
+  left:15%;
+  z-index: 5;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+}
+
+.left_arrow_def{
+  position: absolute;
+  width: 0.25in;
+  height: 0.25in;
+  top:0.275in;
+  left:0.15in;
+}
+.right_arrow_def{
+  position: absolute;
+  width: 0.25in;
+  height: 0.25in;
+  top:0.275in;
+}
+
+.Device_name {
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  border-radius: 50%;
+  top:0.01in;
+  left: 0;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+}
+
+.def_footer_dev {
+  position: absolute;
+  width:1.75in;
+  height: 0.5in;
+  top:1.03in;
+  margin-left:0.075in;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+}
+
+.def_item_text_dev {
+  font-size: 0.18in;
+  position: absolute;
+  top:0.35in;
+  width: 2in;
+}

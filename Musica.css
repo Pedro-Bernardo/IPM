@@ -1,0 +1,585 @@
+.Musica {
+  width: 2.12in;
+  height: 2.12in;
+  position: absolute;
+  border-radius: 50%;
+  top:18%;
+  left:15%;
+  z-index: 4;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+
+}
+
+.Musica_menu {
+  position: relative;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top:0;
+  color:white;
+  width:100%;
+  height:100%;
+}
+
+#Musica_escolha1{
+  width: 2.12in;
+  height: 1.05in;
+  border-top-left-radius:2in;
+  border-top-right-radius:2in;
+  border-bottom-style: solid;
+  border-width: 0.015in;
+  border-color:#ff5100;
+}
+
+#Musica_escolha2{
+  width: 2.12in;
+  height: 1.05in;
+  border-bottom-left-radius:2in;
+  border-bottom-right-radius:2in;
+  top:10%;
+}
+
+.Musica_img{
+  padding-top: 5%;
+  width: 0.6in;
+  height: 0.6in;
+  margin-bottom: -8%;
+}
+
+.Favoritos_img{
+  padding-top: 5%;
+  width: 0.6in;
+  height: 0.6in;
+  margin-bottom: -8%;
+}
+
+.Reconhece{
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  z-index: 5;
+  border-radius: 50%;
+  top:0;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+}
+
+.Procura_img{
+  padding-top: 8%;
+  width: 0.8in;
+  margin-bottom: -10%;
+}
+
+#Ouvindo{
+  font-size: 0.3in;
+  margin-bottom: 0%;
+}
+#ponto1{
+  width: 0.1in;
+  visibility: hidden;
+}
+#ponto2{
+  width: 0.1in;
+  visibility: hidden;
+}
+#ponto3{
+  width: 0.1in;
+  visibility: hidden;
+}
+#back_img{
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  top:0;
+  left: 0;
+  opacity: 0.4;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+#banda{
+  font-size: 0.2in;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+#musica{
+  padding-top:15%;
+  font-size: 0.220in;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+#fav_status {
+  margin-top:12.5%;
+  margin-right:5%;
+  width:0.25in;
+  height:0.25in;
+  border-radius: 100%;
+
+}
+
+#more_music{
+  margin-left:5%;
+  width:0.25in;
+  height:0.25in;
+  border-radius: 100%;
+}
+
+.notification {
+  position: absolute;
+  font-size: 0.125in;
+  background-color: #2d2d2e;
+  padding-top: 0.1in;
+  padding-bottom: 0.1in;
+  width: 30%;
+  top: 60%;
+  left: 35%;
+  opacity: 1;
+  visibility: hidden;
+  z-index: 80;
+  color: white;
+  text-align: center;
+}
+
+
+.left_circle {
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 30%;
+  left: -13%;
+  background-color: #2d2d2e;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  z-index: -1;
+}
+
+.right_circle {
+  position: absolute;
+  top: 61.5%;
+  width: 30%;
+  top: 0;
+  height: 100%;
+  right:-13%;
+  background-color: #2d2d2e;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  z-index: -1;
+}
+
+.Favoritos {
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  border-radius: 50%;
+  top:0;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+}
+
+.fav_item1 {
+  position: relative;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+  top:0.6in;
+  width:1.9in;
+  height: 0.55in;
+  margin-left:0.110in;
+  margin-bottom:-10%;
+  text-align: center;
+}
+
+.fav_item2 {
+  position: relative;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+  width:2.1in;
+  margin-left:0.01in;
+  top:0.78in;
+  height: 0.55in;
+  text-align: center;
+}
+
+
+.fav_footer {
+  position: absolute;
+  width:1.75in;
+  height: 0.5in;
+  top:1.65in;
+  margin-left:0.19in;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+}
+
+.fav_img{
+  position: relative;
+  top:0.055in;
+  margin-left:-1.4in;
+  height: 0.4in;
+  width:  0.4in;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0.5px #ff5100 /*0px 0px 0px 0px #ff5100;*/
+
+}
+
+.band_name {
+  font-size: 0.2in;
+  position: absolute;
+  margin-top: 0.125in;
+  margin-left:0.25in;
+}
+
+.fav_title {
+  position: absolute;
+  height:0.56in;
+  width:1.85in;
+  top:0.01in;
+  margin-left:0.125in;
+  text-align: center;
+}
+
+.title_text {
+  font-size: 0.25in;
+  position: relative;
+  width:1.85in;
+  top:0.25in;
+  text-align: center;
+}
+
+.more_info {
+  width: 2.12in;
+  height: 2.12in;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+  visibility: hidden;
+  top:0;
+  border-style: none;
+  background-color: #1a1a1c;
+}
+
+
+.MusicList {
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  border-radius: 50%;
+  top:0;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+  z-index: 10;
+}
+
+.list_item_1 {
+  position: relative;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+  top:0.6in;
+  width:1.9in;
+  height: 0.36in;
+  margin-left:0.110in;
+  margin-bottom:-10%;
+  text-align: center;
+}
+
+.list_item_2 {
+  position: relative;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+  width:2.1in;
+  margin-left:0.01in;
+  top:0.78in;
+  height: 0.36in;
+  text-align: center;
+}
+
+.list_item_3 {
+  position: relative;
+  border-color: #ff5100;
+  border-top-width: 0.015in;
+  border-top-style: solid;
+  width: 2.05in;
+  margin-left:0.03in;
+  top:0.78in;
+  height: 0.36in;
+  text-align: center;
+}
+
+.song_name {
+  position: relative;
+  height:0.36in;
+  top:0.05in;
+  font-size: 0.175in;  
+}
+
+.band_text {
+  font-size: 0.25in;
+  position: relative;
+  width:1.85in;
+  top:0.25in;
+  text-align: center;
+}
+
+
+.delete_img1 {
+  position: absolute;
+  width: 0.2in;
+  left:0.1in;
+  top:0.675in;
+  z-index: 10;
+}
+
+.delete_img2 {
+  position: absolute;
+  width: 0.2in;
+  left:0.05in;
+  top:1.035in;
+  z-index: 10;
+}
+
+.delete_img3 {
+  position: absolute;
+  width: 0.2in;
+  left:0.15in;
+  top:1.395in;
+  z-index: 10;
+}
+
+
+
+.validation {
+  position: absolute;
+  z-index: 20;
+  width: 2.12in;
+  height: 2.12in;
+  position: absolute;
+  border-radius: 50%;
+  visibility:hidden;
+  top:0;
+  
+}
+
+.validation_background {
+  background-color: #1a1a1c;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+  opacity: 0.9;
+  z-index: -1;
+  
+}
+.yes {
+  position: absolute;
+  top:1.5in;
+  left:0.5in;
+  z-index: 1;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+.no {
+  position: absolute;
+  top:1.5in;
+  right:0.5in;
+  z-index: 1;
+  color: #ff6f00;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+.question {
+  position: absolute;
+  z-index: 1;
+  top:0.45in;
+  width: 1.7in;
+  right:0.185in;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+.question_song {
+  position: absolute;
+  top:0.85in;
+  z-index: 1;
+  width: 1.7in;
+  right:0.185in;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+.Album {
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  top:0;
+  visibility: hidden;
+  color: white;
+  background-color: #1a1a1c;
+  border-radius: 50%;
+  z-index: 15;
+}
+
+#back_img_album {
+  position: absolute;
+  width: 1in;
+  height: 1in;
+  top:3%;
+  left: 26%;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0.5px #ff5100 /*0px 0px 0px 0px #ff5100;*/
+}
+
+#album {
+  position: absolute;
+  font-size: 0.2in;
+  top:45%;
+  width:1.75in;
+  margin-left:0.15in;
+  text-align: center;
+  vertical-align: center;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+  min-height:0.35in;
+}
+
+#artista {
+  font-size: 0.2in;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+  margin-top:0.1in;
+}
+
+#by {
+  font-size: 0.125in;
+  margin-top:-0.05in;
+  margin-bottom:-0.1in;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+#info_extra {
+  position: absolute;
+  font-size: 0.125in;
+  top:75%;
+  width: 1.1in;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+  margin-left: 0.525in;
+}
+
+.letra_box{
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  z-index: 15;
+  border-radius: 50%;
+  top:0;
+  background-color:#1a1a1c;
+  visibility: hidden;
+  color: white;
+}
+
+/*
+#back_img_letra{
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  top:0;
+  left: 0;
+  z-index: 0;
+  border-radius: 50%;
+}
+*/
+
+#letra{
+  position: absolute;
+  font-size: 0.2in;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  width: 2in;
+  height: 0.5in;
+  font-weight: bold;
+  left: 2.5%;
+  top:30%;
+  z-index: 21;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+/*
+#back_img_info {
+  position: absolute;
+  width: 2.12in;
+  height: 2.12in;
+  top:0;
+  left: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #1a1a1c;
+}
+*/
+
+#Info_escolha1 {
+  width: 2.12in;
+  height: 1.06in;
+  border-top-left-radius:2in;
+  border-top-right-radius:2in;
+  border-bottom-style: solid;
+  border-width: 0.015in;
+  border-color:#ff5100;
+}
+
+#Info_escolha2 {
+  width: 2.12in;
+  height: 1.06in;
+  border-bottom-left-radius:2in;
+  border-bottom-right-radius:2in;
+  top:10%;
+}
+
+.fav_number_b {
+  position: absolute;
+  top:57.5%;
+  left:52.5%;
+  border-radius:50%;
+  width:0.2in;
+  height:0.2in;
+  background-color: #ff5100;
+  visibility: hidden;
+  text-align: center;
+}
+
+
+.fav_number {
+  font-size: 0.12in;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+}
+
+
+.fav_item_number_b {
+  position: absolute;
+  border-radius:50%;
+  left:50%;
+  top:5%;
+  margin-left: -0.6in;
+  width:0.15in;
+  height:0.15in;
+  background-color: #ff5100;
+  visibility: visible;
+  text-align: center;
+  z-index: 6;
+}
+
+.fav_item_number {
+  position: absolute;
+  font-size: 0.125in;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black,0 -1px black;
+  top:0;
+  left:25%;
+}
